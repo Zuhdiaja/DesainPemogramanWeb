@@ -80,4 +80,14 @@ $hasilTidakIdentik = $a !== $b;
 echo "<h3>Operator Identik</h3>";
 echo "hasil identik: " . ($hasilIdentik ? 'true' : 'false') . "<br>";
 echo "hasil tidak identik: " . ($hasilTidakIdentik ? 'true' : 'false') . "<br>";
+
+$totalRak = 120;
+$rakTerisi = 85;
+$rakKosong = $totalRak - $rakTerisi;
+$persenKosong = ($rakKosong / $totalRak) * 100;
+echo "<h3>Soal Cerita Rak Buku</h3>";
+echo "Total rak buku: $totalRak <br>";
+echo "Jumlah rak yang sudah terisi: $rakTerisi <br>";
+echo "Jumlah rak yang masih kosong: $rakKosong rak<br>";
+echo "Persentase rak buku yang masih kosong: " . number_format($persenKosong, 2). "%<br>";
 ?>
